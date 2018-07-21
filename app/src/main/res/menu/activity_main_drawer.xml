@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="NEWS">
+        <menu>
+        <item
+            android:id="@+id/IGNic"
+            android:icon="@drawable/ign"
+            android:title="IGN" />
+
+        </menu></item>
+
+        <item android:title="GAMES">
+        <menu>
+            <item
+                android:id="@+id/CODic"
+                android:icon="@drawable/cod"
+                android:title="COD" />
+            <item
+                android:id="@+id/R6ic"
+                android:icon="@drawable/r6"
+                android:title="R6 SEIGE" />
+            <item
+                android:id="@+id/CSic"
+                android:icon="@drawable/cs"
+                android:title="CS" />
+        </menu>
+        </item>
+        <item android:title="UTILITY">
+            <menu>   <item
+                android:id="@+id/Timeric"
+                android:icon="@drawable/timer"
+                android:title="Timer" /></menu>
+        </item>
+
+
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+-->
+</menu>

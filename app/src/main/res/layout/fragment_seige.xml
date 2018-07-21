@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seige">
+
+    <ScrollView
+        android:id="@+id/R6_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/email_login_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_margin="25dp">
+
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:text="Rainbow 6 Seige"
+                        android:textSize="24sp"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="296dp"
+                        android:src="@drawable/r6" />
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:text="Rating"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_seige"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:text="History"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/r6_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="214dp"
+                        android:enabled="true"
+                        android:lines="12"
+                        android:maxLines="12"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold" />
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:text="Kill/Death Ratio"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/r6_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"/>
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.design.widget.TextInputLayout>
+
+
+
+
+                    <Button
+                        android:id="@+id/r6_check"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Check Data"
+                        android:textStyle="bold" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/r6_kills"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Kills"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/r6_deaths"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Deaths"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:inputType="number" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.design.widget.TextInputLayout>
+                    <Button
+                        android:id="@+id/r6_update"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Update"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
